@@ -24,8 +24,8 @@ if ($env == "product")
 }
 define('ENV_NAME', $env);
 
-define('PUBLIC_PATH', '/data/www/public/');
-require_once PUBLIC_PATH.'framework/libs/lib_config.php';
+define('PUBLIC_PATH', '/data/wamp/Donkey/src/public/');
+require_once PUBLIC_PATH.'../framework/libs/lib_config.php';
 
 Swoole::$php->config->setPath(APPSPATH . '/configs');
 Swoole::$php->config->setPath(APPSPATH . '/configs/' . ENV_NAME);
